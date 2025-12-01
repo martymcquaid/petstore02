@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm-18 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm5.5 3c-.8 0-1.5.7-1.5 1.5S7.7 15 8.5 15s1.5-.7 1.5-1.5S9.3 12 8.5 12zm7 0c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5-.7-1.5-1.5-1.5zm-3.5 4c-2.3 0-4.2 1.8-4.5 4h9c-.3-2.2-2.2-4-4.5-4z"/>
                 </svg>
               </div>
               <span className="text-xl font-bold">Pet Stuff</span>
