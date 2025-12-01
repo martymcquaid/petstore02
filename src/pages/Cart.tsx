@@ -116,9 +116,11 @@ export default function CartPage() {
 
             {/* Continue Shopping */}
             <div className="mt-6">
-              <Button variant="outline" onClick={() => window.location.href = '/'}>
-                Continue Shopping
-              </Button>
+              <Link to="/">
+                <Button variant="outline">
+                  Continue Shopping
+                </Button>
+              </Link>
             </div>
           </div>
 
