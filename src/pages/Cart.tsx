@@ -1,49 +1,13 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Button from '../components/Button'
-import { mockProducts } from '../data/products'
-import { CartItem } from '../types'
+import { useCart } from '../context/CartContext'
 
 export default function CartPage() {
-  const [cartItems, setCartItems] = useState<CartItem[]>([
-    {
-      product: mockProducts[0],
-      quantity: 2,
-      selectedSize: 'Medium (10oz)'
-    },
-    {
-      product: mockProducts[1],
-      quantity: 1
-    },
-    {
-      product: mockProducts[2],
-      quantity: 1,
-      selectedSize: 'Large (50x35)',
-      selectedColor: 'Gray'
-    }
-  ])
+  const { state, updateQuantity, removeFromCart } = useCart()
 
-  const updateQuantity = (productId: string, newQuantity: number) => {
-    if (newQuantity === 0) {
-      setCartItems(cartItems.filter(item => item.product.id !== productId))
-    } else {
-      setCartItems(cartItems.map(item =>
-        item.product.id === productId
-          ? { ...item, quantity: newQuantity }
-          : item
-      ))
-    }
-  }
-
-  const removeItem = (productId: string) => {
-    setCartItems(cartItems.filter(item => item.product.id !== productId))
-  }
-
-  const subtotal = cartItems.reduce((total, item) => {
-    return total + (item.product.price * item.quantity)
-  }, 0)
-
+  const subtotal = state.total
   const shipping = subtotal > 50 ? 0 : 9.99
   const tax = subtotal * 0.08
   const total = subtotal + shipping + tax
