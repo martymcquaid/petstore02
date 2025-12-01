@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
+import { useWishlist } from '../context/WishlistContext'
 import { useTheme } from '../context/ThemeContext'
 import { useState, useEffect, useRef } from 'react'
 import { mockProducts } from '../data/products'
