@@ -45,11 +45,13 @@ export default function ProductCard({ product, onAddToCart, onQuickView }: Produ
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
       {/* Product Image */}
       <div className="relative overflow-hidden">
-        <img
-          src={product.images[0]}
-          alt={product.name}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
+        <Link to={`/product/${product.id}`}>
+          <img
+            src={product.images[0]}
+            alt={product.name}
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+          />
+        </Link>
         
         {/* Badges */}
         <div className="absolute top-2 left-2 flex flex-col gap-1">
