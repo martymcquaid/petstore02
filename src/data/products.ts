@@ -45,7 +45,7 @@ export const categories: Category[] = [
     id: 'small-animals',
     name: 'Small Animals',
     description: 'Essentials for rabbits, guinea pigs, and more',
-    image: '/images/categories/small-animals.jpg',
+    image: 'https://images.unsplash.com/photo-1422568374078-57d432c8de21?w=400&h=400&fit=crop&crop=center',
     color: 'pink',
     subcategories: ['Food & Treats', 'Toys', 'Cages & Habitats', 'Bedding', 'Grooming', 'Health & Wellness']
   }
