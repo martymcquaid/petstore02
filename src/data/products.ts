@@ -174,9 +174,9 @@ export const mockProducts: Product[] = [
     description: 'Spacious bird cage with play top, seed guards, and easy-clean bottom. Suitable for medium-sized birds.',
     price: 149.99,
     images: [
-      '/images/products/bird-cage-1.jpg',
-      '/images/products/bird-cage-2.jpg',
-      '/images/products/bird-cage-3.jpg'
+      'https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1577515911212-4c6607e0a5d5?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1584214177574-0e3e4e4a1b3c?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'birds',
     subcategory: 'Cages & Habitats',
