@@ -218,8 +218,8 @@ export const mockProducts: Product[] = [
     description: 'Adjustable heat lamp with UVA/UVB lighting for reptiles. Essential for maintaining proper temperature.',
     price: 34.99,
     images: [
-      '/images/products/reptile-heat-lamp-1.jpg',
-      '/images/products/reptile-heat-lamp-2.jpg'
+      'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1577567912240-7d8509a89722?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'reptiles',
     subcategory: 'Heating & Lighting',
