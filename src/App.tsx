@@ -14,7 +14,8 @@ import WishlistPage from './pages/Wishlist'
 function App() {
   return (
     <ThemeProvider>
-      <CartProvider>
+      <WishlistProvider>
+        <CartProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/:categoryId" element={<CategoryPage />} />
