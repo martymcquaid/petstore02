@@ -94,9 +94,9 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
       {/* Product Info */}
       <div className="p-4">
         <div className="mb-2">
-          <p className="text-sm text-gray-500 mb-1">{product.brand}</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">{product.brand}</p>
           <Link to={`/product/${product.id}`}>
-            <h3 className="text-lg font-semibold text-gray-900 line-clamp-2 hover:text-teal-600 transition-colors cursor-pointer">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white line-clamp-2 hover:text-teal-600 dark:hover:text-teal-400 transition-colors cursor-pointer">
               {product.name}
             </h3>
           </Link>
