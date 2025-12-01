@@ -25,7 +25,7 @@ export default function CartPage() {
             </svg>
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Your cart is empty</h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">Looks like you haven't added any pet products to your cart yet.</p>
-            <Link to="/">
+            <Link to="/" onClick={scrollToTop}>
               <Button size="lg">
                 Continue Shopping
               </Button>
