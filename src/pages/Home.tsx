@@ -99,7 +99,6 @@ export default function Home() {
               <ProductCard
                 key={product.id}
                 product={product}
-                onAddToCart={handleAddToCart}
                 onQuickView={handleQuickView}
               />
             ))}
