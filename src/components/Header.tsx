@@ -127,22 +127,22 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/category/dogs" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link to="/category/dogs" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
               Dogs
             </Link>
-            <Link to="/category/cats" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link to="/category/cats" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
               Cats
             </Link>
-            <Link to="/category/birds" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link to="/category/birds" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
               Birds
             </Link>
-            <Link to="/category/fish" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link to="/category/fish" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
               Fish
             </Link>
-            <Link to="/category/reptiles" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link to="/category/reptiles" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
               Reptiles
             </Link>
-            <Link to="/category/small-animals" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link to="/category/small-animals" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
               Small Animals
             </Link>
           </nav>
