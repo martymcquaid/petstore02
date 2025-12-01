@@ -81,7 +81,7 @@ export default function CheckoutPage() {
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">Contact Information</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Email Address *
                   </label>
                   <input
