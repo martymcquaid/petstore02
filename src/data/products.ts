@@ -197,8 +197,8 @@ export const mockProducts: Product[] = [
     description: 'Complete 10-gallon aquarium starter kit with filter, heater, LED light, and decorations. Perfect for beginners.',
     price: 79.99,
     images: [
-      '/images/products/fish-tank-kit-1.jpg',
-      '/images/products/fish-tank-kit-2.jpg'
+      'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1570891519019-4b1bb618857b?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'fish',
     subcategory: 'Tanks & Aquariums',
