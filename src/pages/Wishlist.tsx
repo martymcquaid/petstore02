@@ -23,7 +23,7 @@ export default function WishlistPage() {
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
               Start adding products you love to your wishlist!
             </p>
-            <Link to="/">
+            <Link to="/" onClick={scrollToTop}>
               <Button size="lg">
                 Continue Shopping
               </Button>
