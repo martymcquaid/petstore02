@@ -48,7 +48,7 @@ export default function CartPage() {
           {/* Cart Items */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-              {cartItems.map((item) => (
+              {state.items.map((item) => (
                 <div key={item.product.id} className="p-6 border-b border-gray-200 last:border-b-0">
                   <div className="flex gap-4">
                     {/* Product Image */}
