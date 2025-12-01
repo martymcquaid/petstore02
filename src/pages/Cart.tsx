@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Button from '../components/Button'
 import { useCart } from '../context/CartContext'
+import { scrollToTop } from '../utils/scrollToTop'
 
 export default function CartPage() {
   const { state, updateQuantity, removeFromCart } = useCart()
