@@ -12,10 +12,10 @@ export default function CartPage() {
   const tax = subtotal * 0.08
   const total = subtotal + shipping + tax
 
-  if (cartItems.length === 0) {
+  if (state.items.length === 0) {
     return (
       <div className="min-h-screen bg-white">
-        <Header cartItemCount={0} />
+        <Header />
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
@@ -24,9 +24,11 @@ export default function CartPage() {
             </svg>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Your cart is empty</h1>
             <p className="text-lg text-gray-600 mb-8">Looks like you haven't added any pet products to your cart yet.</p>
-            <Button size="lg" onClick={() => window.location.href = '/'}>
-              Continue Shopping
-            </Button>
+            <Link to="/">
+              <Button size="lg">
+                Continue Shopping
+              </Button>
+            </Link>
           </div>
         </div>
 
