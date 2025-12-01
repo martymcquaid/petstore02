@@ -21,7 +21,7 @@ export const categories: Category[] = [
     id: 'birds',
     name: 'Birds',
     description: 'Supplies for feathered friends',
-    image: '/images/categories/birds.jpg',
+    image: 'https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=400&h=400&fit=crop&crop=center',
     color: 'green',
     subcategories: ['Food & Treats', 'Toys', 'Cages & Habitats', 'Grooming', 'Health & Wellness']
   },
