@@ -64,7 +64,7 @@ export default function CategoryPage() {
                           type="checkbox"
                           className="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded"
                         />
-                        <span className="ml-2 text-sm text-gray-700">{subcategory}</span>
+                        <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">{subcategory}</span>
                       </label>
                     ))}
                   </div>
