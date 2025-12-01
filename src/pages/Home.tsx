@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header cartItemCount={0} />
+      <Header />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-teal-50 to-cyan-50 py-20">
