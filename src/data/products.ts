@@ -13,7 +13,7 @@ export const categories: Category[] = [
     id: 'cats',
     name: 'Cats',
     description: 'Premium products for your feline friends',
-    image: '/images/categories/cats.jpg',
+    image: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop&crop=center',
     color: 'purple',
     subcategories: ['Food & Treats', 'Toys', 'Beds & Comfort', 'Grooming', 'Litter & Accessories', 'Scratching']
   },
