@@ -12,6 +12,12 @@ export default function Header() {
   const { state: wishlistState } = useWishlist()
   const { theme, toggleTheme } = useTheme()
   const navigate = useNavigate()
+  const location = useLocation()
+
+  // Scroll to top when route changes
+  useEffect(() => {
+    scrollToTop()
+  }, [location.pathname])
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState<Product[]>([])
   const [isSearchOpen, setIsSearchOpen] = useState(false)
