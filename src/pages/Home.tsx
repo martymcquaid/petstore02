@@ -65,6 +65,7 @@ export default function Home() {
                 key={category.id}
                 to={`/category/${category.id}`}
                 className="group"
+                onClick={scrollToTop}
               >
                 <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
                   <div className="aspect-square bg-gradient-to-br from-teal-100 to-cyan-100 flex items-center justify-center">
