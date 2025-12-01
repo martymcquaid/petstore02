@@ -18,8 +18,8 @@ export default function OrderConfirmationPage() {
           </div>
 
           {/* Success Message */}
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Order Confirmed!</h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Order Confirmed!</h1>
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Thank you for your purchase. Your order has been successfully placed and will be processed shortly.
           </p>
 
