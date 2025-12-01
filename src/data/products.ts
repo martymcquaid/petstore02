@@ -59,9 +59,9 @@ export const mockProducts: Product[] = [
     price: 12.99,
     originalPrice: 16.99,
     images: [
-      '/images/products/dog-treats-1.jpg',
-      '/images/products/dog-treats-2.jpg',
-      '/images/products/dog-treats-3.jpg'
+      'https://images.unsplash.com/photo-1583337130417-3346a1bbe748?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1548199973-03cce0bbc87b6?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1591005246457-7b821b13c712?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'dogs',
     subcategory: 'Food & Treats',
@@ -83,8 +83,8 @@ export const mockProducts: Product[] = [
     description: '3-piece interactive toy set with feathers, bells, and catnip to keep your cat entertained for hours.',
     price: 18.99,
     images: [
-      '/images/products/cat-toy-set-1.jpg',
-      '/images/products/cat-toy-set-2.jpg'
+      'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'cats',
     subcategory: 'Toys',
