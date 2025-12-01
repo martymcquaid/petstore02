@@ -461,7 +461,6 @@ export default function ProductPage() {
                 <ProductCard
                   key={relatedProduct.id}
                   product={relatedProduct}
-                  onAddToCart={(product) => console.log('Added to cart:', product.name)}
                   onQuickView={(product) => console.log('Quick view:', product.name)}
                 />
               ))}
