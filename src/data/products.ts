@@ -105,9 +105,9 @@ export const mockProducts: Product[] = [
     price: 89.99,
     originalPrice: 119.99,
     images: [
-      '/images/products/dog-bed-1.jpg',
-      '/images/products/dog-bed-2.jpg',
-      '/images/products/dog-bed-3.jpg'
+      'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1415369629372-26f2b60e7427?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1583337130417-3346a1bbe748?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'dogs',
     subcategory: 'Beds & Comfort',
