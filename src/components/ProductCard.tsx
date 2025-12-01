@@ -112,9 +112,9 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
 
         {/* Price */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="text-xl font-bold text-gray-900">${product.price}</span>
+          <span className="text-xl font-bold text-gray-900 dark:text-white">${product.price}</span>
           {product.originalPrice && (
-            <span className="text-sm text-gray-500 line-through">${product.originalPrice}</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400 line-through">${product.originalPrice}</span>
           )}
         </div>
 
