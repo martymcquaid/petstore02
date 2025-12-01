@@ -12,10 +12,6 @@ export default function CategoryPage() {
   const category = categories.find(cat => cat.id === categoryId)
   const categoryProducts = mockProducts.filter(product => product.category === categoryId)
 
-  const handleAddToCart = (product: Product) => {
-    console.log('Added to cart:', product.name)
-  }
-
   const handleQuickView = (product: Product) => {
     console.log('Quick view:', product.name)
   }
