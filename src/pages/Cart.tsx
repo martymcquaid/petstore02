@@ -64,11 +64,11 @@ export default function CartPage() {
                         <div>
                           <h3 className="text-lg font-semibold text-gray-900">{item.product.name}</h3>
                           <p className="text-sm text-gray-500">{item.product.brand}</p>
-                          {item.selectedSize && (
-                            <p className="text-sm text-gray-500">Size: {item.selectedSize}</p>
+                          {item.size && (
+                            <p className="text-sm text-gray-500">Size: {item.size}</p>
                           )}
-                          {item.selectedColor && (
-                            <p className="text-sm text-gray-500">Color: {item.selectedColor}</p>
+                          {item.color && (
+                            <p className="text-sm text-gray-500">Color: {item.color}</p>
                           )}
                         </div>
                         <button
