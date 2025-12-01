@@ -37,7 +37,7 @@ export const categories: Category[] = [
     id: 'reptiles',
     name: 'Reptiles',
     description: 'Habitats and supplies for reptile care',
-    image: '/images/categories/reptiles.jpg',
+    image: 'https://images.unsplash.com/photo-1584214177574-0e3e4e4a1b3c?w=400&h=400&fit=crop&crop=center',
     color: 'orange',
     subcategories: ['Food & Treats', 'Habitats', 'Heating & Lighting', 'Decorations', 'Health & Wellness']
   },
