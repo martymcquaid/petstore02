@@ -37,7 +37,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <img
-                src="/images/hero-pets.jpg"
+                src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=400&fit=crop&crop=center"
                 alt="Happy pets with Pet Stuff products"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
