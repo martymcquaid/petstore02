@@ -396,7 +396,11 @@ export default function ProductPage() {
 
                 <div className="border-b pb-6">
                   <div className="flex items-center gap-4 mb-3">
-                    <div className="w-12 h-12 bg-gray-300 rounded-full"></div>
+                    <img 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face&face=center"
+                      alt="Mike Chen" 
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
                     <div>
                       <p className="font-semibold text-gray-900">Mike Chen</p>
                       <div className="flex items-center gap-2">
