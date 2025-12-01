@@ -29,7 +29,7 @@ export const categories: Category[] = [
     id: 'fish',
     name: 'Fish',
     description: 'Create the perfect aquatic environment',
-    image: '/images/categories/fish.jpg',
+    image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=400&fit=crop&crop=center',
     color: 'cyan',
     subcategories: ['Food & Treats', 'Tanks & Aquariums', 'Decorations', 'Filters & Pumps', 'Water Care']
   },
