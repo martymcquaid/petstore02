@@ -56,7 +56,7 @@ export default function CategoryPage() {
                 
                 {/* Subcategories */}
                 <div className="mb-6">
-                  <h4 className="font-medium text-gray-900 mb-3">Type</h4>
+                  <h4 className="font-medium text-gray-900 dark:text-white mb-3">Type</h4>
                   <div className="space-y-2">
                     {category.subcategories.map((subcategory) => (
                       <label key={subcategory} className="flex items-center">
