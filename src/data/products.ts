@@ -306,8 +306,8 @@ export const mockProducts: Product[] = [
     description: 'Complete pet first aid kit with essential supplies for emergencies. Includes bandages, antiseptic wipes, and more.',
     price: 29.99,
     images: [
-      '/images/products/first-aid-kit-1.jpg',
-      '/images/products/first-aid-kit-2.jpg'
+      'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'dogs',
     subcategory: 'Health & Wellness',
