@@ -129,7 +129,7 @@ export default function CartPage() {
               
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-gray-700">
-                  <span>Subtotal ({cartItems.reduce((total, item) => total + item.quantity, 0)} items)</span>
+                  <span>Subtotal ({state.itemCount} items)</span>
                   <span>${subtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-gray-700">
