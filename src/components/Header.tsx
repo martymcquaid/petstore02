@@ -184,7 +184,7 @@ export default function Header() {
                 />
               </svg>
             </button>
-            <button className="p-2 text-gray-700 hover:text-teal-600 transition-colors">
+            <button className="p-2 text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
@@ -194,7 +194,7 @@ export default function Header() {
                 />
               </svg>
             </button>
-            <Link to="/cart" className="relative p-2 text-gray-700 hover:text-teal-600 transition-colors">
+            <Link to="/cart" className="relative p-2 text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
