@@ -10,6 +10,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, onQuickView }: ProductCardProps) {
   const { addToCart } = useCart()
+  const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist()
   const renderStars = (rating: number) => {
     const stars = []
     const fullStars = Math.floor(rating)
