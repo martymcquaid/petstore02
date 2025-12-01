@@ -2,6 +2,7 @@ import { Product } from '../types'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { useWishlist } from '../context/WishlistContext'
+import { scrollToTop } from '../utils/scrollToTop'
 
 interface ProductCardProps {
   product: Product
