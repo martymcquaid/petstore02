@@ -15,6 +15,7 @@ export default function ProductPage() {
   const [selectedColor, setSelectedColor] = useState('')
   const [quantity, setQuantity] = useState(1)
   const { addToCart } = useCart()
+  const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist()
   
   const product = mockProducts.find(p => p.id === productId)
   const relatedProducts = mockProducts
