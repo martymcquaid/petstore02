@@ -152,8 +152,8 @@ export const mockProducts: Product[] = [
     description: 'Complete grooming kit including brush, nail clippers, and shampoo. Everything you need for cat grooming.',
     price: 24.99,
     images: [
-      '/images/products/cat-grooming-kit-1.jpg',
-      '/images/products/cat-grooming-kit-2.jpg'
+      'https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'cats',
     subcategory: 'Grooming',
