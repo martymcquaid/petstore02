@@ -5,6 +5,7 @@ import ProductCard from '../components/ProductCard'
 import Button from '../components/Button'
 import { categories, featuredProducts } from '../data/products'
 import { Product } from '../types'
+import { scrollToTop } from '../utils/scrollToTop'
 
 export default function Home() {
   const handleQuickView = (product: Product) => {
