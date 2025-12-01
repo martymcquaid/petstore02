@@ -5,6 +5,7 @@ import CategoryPage from './pages/Category'
 import ProductPage from './pages/Product'
 import CartPage from './pages/Cart'
 import CheckoutPage from './pages/Checkout'
+import OrderConfirmationPage from './pages/OrderConfirmation'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/product/:productId" element={<ProductPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/order-confirmation" element={<OrderConfirmationPage />} />
       </Routes>
     </CartProvider>
   )
