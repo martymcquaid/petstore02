@@ -419,7 +419,15 @@ export default function CheckoutPage() {
               <div className="space-y-4 mb-6">
                 {state.items.map((item) => (
                   <div key={item.product.id} className="flex gap-3">
-                    <img src={item.product.images[0]} alt={item.product.name} className="w-16 h-16 object-cover rounded" />
+                    <img 
+                      src={item.product.images[0]} 
+                      alt={item.product.name} 
+                      className="w-16 h-16 object-cover rounded"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=center';
+                      }}
+                    />
                     <div className="flex-1">
                       <p className="text-sm font-medium text-gray-900">{item.product.name}</p>
                       {item.size && <p className="text-sm text-gray-500">Size: {item.size}</p>}
