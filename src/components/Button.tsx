@@ -17,13 +17,13 @@ export default function Button({
   type = 'button',
   className = ''
 }: ButtonProps) {
-  const baseClasses = 'font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2'
+  const baseClasses = 'font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900'
   
   const variantClasses = {
     primary: 'bg-teal-500 text-white hover:bg-teal-600 disabled:bg-gray-300 disabled:cursor-not-allowed',
-    secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300 disabled:bg-gray-100 disabled:text-gray-400',
-    outline: 'border border-teal-500 text-teal-500 hover:bg-teal-50 disabled:border-gray-300 disabled:text-gray-400',
-    ghost: 'text-teal-500 hover:bg-teal-50 disabled:text-gray-400'
+    secondary: 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 disabled:bg-gray-100 disabled:text-gray-400',
+    outline: 'border border-teal-500 text-teal-500 hover:bg-teal-50 dark:hover:bg-teal-900/20 disabled:border-gray-300 disabled:text-gray-400',
+    ghost: 'text-teal-500 hover:bg-teal-50 dark:hover:bg-teal-900/20 disabled:text-gray-400'
   }
   
   const sizeClasses = {

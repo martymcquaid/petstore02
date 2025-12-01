@@ -33,7 +33,7 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
     const emptyStars = 5 - Math.ceil(rating)
     for (let i = 0; i < emptyStars; i++) {
       stars.push(
-        <svg key={`empty-${i}`} className="h-4 w-4 text-gray-300 fill-current" viewBox="0 0 20 20">
+        <svg key={`empty-${i}`} className="h-4 w-4 text-gray-300 dark:text-gray-600 fill-current" viewBox="0 0 20 20">
           <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
         </svg>
       )
@@ -43,7 +43,7 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
       {/* Product Image */}
       <div className="relative overflow-hidden">
         <Link to={`/product/${product.id}`}>
