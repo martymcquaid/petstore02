@@ -39,8 +39,8 @@ export default function CategoryPage() {
       <section className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">{category.name} Products</h1>
-            <p className="text-xl text-gray-600">{category.description}</p>
+            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{category.name} Products</h1>
+            <p className="text-xl text-gray-600 dark:text-gray-300">{category.description}</p>
           </div>
         </div>
       </section>
