@@ -5,7 +5,7 @@ export const categories: Category[] = [
     id: 'dogs',
     name: 'Dogs',
     description: 'Everything your canine companion needs',
-    image: '/images/categories/dogs.jpg',
+    image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=center',
     color: 'blue',
     subcategories: ['Food & Treats', 'Toys', 'Beds & Comfort', 'Grooming', 'Collars & Leads', 'Training']
   },
