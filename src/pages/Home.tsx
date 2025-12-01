@@ -7,10 +7,6 @@ import { categories, featuredProducts } from '../data/products'
 import { Product } from '../types'
 
 export default function Home() {
-  const handleAddToCart = (product: Product) => {
-    console.log('Added to cart:', product.name)
-  }
-
   const handleQuickView = (product: Product) => {
     console.log('Quick view:', product.name)
   }
