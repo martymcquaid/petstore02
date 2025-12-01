@@ -186,13 +186,21 @@ export default function Header() {
         </div>
 
         {/* Mobile Search */}
-        <div className="md:hidden pb-3">
+        <div className="md:hidden pb-3" ref={searchRef}>
           <div className="relative">
-            <input
-              type="text"
-              placeholder="Search for pet products..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-            />
+            <form onSubmit={handleSearchSubmit}>
+              <input
+                type="text"
+                placeholder="Search for pet products..."
+                value={searchQuery}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value)
+                  setIsSearchOpen(true)
+                }}
+                onFocus={() => setIsSearchOpen(true)}
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+              />
+            </form>
             <svg
               className="absolute left-3 top-2.5 h-5 w-5 text-gray-400"
               fill="none"
@@ -206,6 +214,30 @@ export default function Header() {
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
+            
+            {/* Mobile Search Results Dropdown */}
+            {isSearchOpen && searchResults.length > 0 && (
+              <div className="absolute top-full mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-lg max-h-96 overflow-y-auto z-50">
+                {searchResults.map((product) => (
+                  <div
+                    key={product.id}
+                    onClick={() => handleProductClick(product.id)}
+                    className="flex items-center p-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0"
+                  >
+                    <img
+                      src={product.images[0]}
+                      alt={product.name}
+                      className="w-12 h-12 object-cover rounded-md mr-3"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-gray-900 truncate">{product.name}</p>
+                      <p className="text-xs text-gray-500 truncate">{product.brand}</p>
+                      <p className="text-sm font-semibold text-teal-600">${product.price}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
