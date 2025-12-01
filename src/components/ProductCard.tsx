@@ -124,7 +124,7 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
 
         {/* Add to Cart Button */}
         <button
-          onClick={() => onAddToCart?.(product)}
+          onClick={() => addToCart(product, 1)}
           disabled={!product.inStock}
           className={`w-full py-2 px-4 rounded-lg font-medium transition-colors ${
             product.inStock
