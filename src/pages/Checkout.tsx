@@ -77,8 +77,8 @@ export default function CheckoutPage() {
           {/* Main Form */}
           <div className="lg:col-span-2 space-y-8">
             {/* Contact Information */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <h2 className="text-xl font-semibold text-gray-900 mb-6">Contact Information</h2>
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">Contact Information</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
