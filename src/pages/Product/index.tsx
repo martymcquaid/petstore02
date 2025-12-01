@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import Button from '../../components/Button'
 import ProductCard from '../../components/ProductCard'
 import { mockProducts } from '../../data/products'
+import { useCart } from '../../context/CartContext'
 
 export default function ProductPage() {
   const { productId } = useParams<{ productId: string }>()
