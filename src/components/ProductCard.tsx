@@ -51,6 +51,10 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
             src={product.images[0]}
             alt={product.name}
             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=center';
+            }}
           />
         </Link>
         
