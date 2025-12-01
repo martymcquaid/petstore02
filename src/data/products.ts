@@ -282,8 +282,8 @@ export const mockProducts: Product[] = [
     price: 39.99,
     originalPrice: 49.99,
     images: [
-      '/images/products/cat-scratching-post-1.jpg',
-      '/images/products/cat-scratching-post-2.jpg'
+      'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'cats',
     subcategory: 'Scratching',
