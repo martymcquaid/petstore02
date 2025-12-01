@@ -66,7 +66,7 @@ export default function Header() {
             <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">P</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Pet Stuff</span>
+            <span className="text-xl font-bold text-gray-900 dark:text-white">Pet Stuff</span>
           </Link>
 
           {/* Search Bar */}
