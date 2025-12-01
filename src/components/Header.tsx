@@ -244,12 +244,12 @@ export default function Header() {
             
             {/* Mobile Search Results Dropdown */}
             {isSearchOpen && searchResults.length > 0 && (
-              <div className="absolute top-full mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-lg max-h-96 overflow-y-auto z-50">
+              <div className="absolute top-full mt-2 w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg shadow-lg max-h-96 overflow-y-auto z-50">
                 {searchResults.map((product) => (
                   <div
                     key={product.id}
                     onClick={() => handleProductClick(product.id)}
-                    className="flex items-center p-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0"
+                    className="flex items-center p-3 hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer border-b border-gray-100 dark:border-gray-700 last:border-b-0"
                   >
                     <img
                       src={product.images[0]}
@@ -257,9 +257,9 @@ export default function Header() {
                       className="w-12 h-12 object-cover rounded-md mr-3"
                     />
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-gray-900 truncate">{product.name}</p>
-                      <p className="text-xs text-gray-500 truncate">{product.brand}</p>
-                      <p className="text-sm font-semibold text-teal-600">${product.price}</p>
+                      <p className="text-sm font-medium text-gray-900 dark:text-white truncate">{product.name}</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 truncate">{product.brand}</p>
+                      <p className="text-sm font-semibold text-teal-600 dark:text-teal-400">${product.price}</p>
                     </div>
                   </div>
                 ))}
