@@ -57,14 +57,14 @@ export default function CheckoutPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log('Checkout submitted:', formData)
+    clearCart()
+    navigate('/order-confirmation')
   }
 
-  const orderSummary = {
-    subtotal: 156.97,
-    shipping: 0,
-    tax: 12.56,
-    total: 169.53
-  }
+  const subtotal = state.total
+  const shipping = subtotal > 50 ? 0 : 9.99
+  const tax = subtotal * 0.08
+  const total = subtotal + shipping + tax
 
   return (
     <div className="min-h-screen bg-gray-50">
