@@ -8,6 +8,7 @@ import { Product } from '../types'
 
 export default function Header() {
   const { state } = useCart()
+  const { state: wishlistState } = useWishlist()
   const { theme, toggleTheme } = useTheme()
   const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
