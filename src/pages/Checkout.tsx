@@ -417,34 +417,18 @@ export default function CheckoutPage() {
               
               {/* Order Items */}
               <div className="space-y-4 mb-6">
-                <div className="flex gap-3">
-                  <img src="/images/products/dog-treats-1.jpg" alt="Product" className="w-16 h-16 object-cover rounded" />
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-gray-900">Premium Chicken Dog Treats</p>
-                    <p className="text-sm text-gray-500">Size: Medium (10oz)</p>
-                    <p className="text-sm text-gray-500">Qty: 2</p>
+                {state.items.map((item) => (
+                  <div key={item.product.id} className="flex gap-3">
+                    <img src={item.product.images[0]} alt={item.product.name} className="w-16 h-16 object-cover rounded" />
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-gray-900">{item.product.name}</p>
+                      {item.size && <p className="text-sm text-gray-500">Size: {item.size}</p>}
+                      {item.color && <p className="text-sm text-gray-500">Color: {item.color}</p>}
+                      <p className="text-sm text-gray-500">Qty: {item.quantity}</p>
+                    </div>
+                    <span className="text-sm font-medium">${(item.product.price * item.quantity).toFixed(2)}</span>
                   </div>
-                  <span className="text-sm font-medium">$25.98</span>
-                </div>
-                
-                <div className="flex gap-3">
-                  <img src="/images/products/cat-toy-set-1.jpg" alt="Product" className="w-16 h-16 object-cover rounded" />
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-gray-900">Interactive Cat Toy Set</p>
-                    <p className="text-sm text-gray-500">Qty: 1</p>
-                  </div>
-                  <span className="text-sm font-medium">$18.99</span>
-                </div>
-                
-                <div className="flex gap-3">
-                  <img src="/images/products/dog-bed-1.jpg" alt="Product" className="w-16 h-16 object-cover rounded" />
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-gray-900">Luxury Orthopedic Dog Bed</p>
-                    <p className="text-sm text-gray-500">Size: Large (50x35)</p>
-                    <p className="text-sm text-gray-500">Qty: 1</p>
-                  </div>
-                  <span className="text-sm font-medium">$89.99</span>
-                </div>
+                ))}
               </div>
 
               {/* Price Breakdown */}
