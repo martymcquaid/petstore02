@@ -107,7 +107,7 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
           <div className="flex items-center">
             {renderStars(product.rating)}
           </div>
-          <span className="text-sm text-gray-500">({product.reviewCount})</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">({product.reviewCount})</span>
         </div>
 
         {/* Price */}
