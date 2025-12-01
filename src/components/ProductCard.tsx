@@ -1,5 +1,6 @@
 import { Product } from '../types'
 import { Link } from 'react-router-dom'
+import { useCart } from '../context/CartContext'
 
 interface ProductCardProps {
   product: Product
@@ -7,7 +8,8 @@ interface ProductCardProps {
   onQuickView?: (product: Product) => void
 }
 
-export default function ProductCard({ product, onAddToCart, onQuickView }: ProductCardProps) {
+export default function ProductCard({ product, onQuickView }: ProductCardProps) {
+  const { addToCart } = useCart()
   const renderStars = (rating: number) => {
     const stars = []
     const fullStars = Math.floor(rating)
