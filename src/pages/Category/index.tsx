@@ -51,8 +51,8 @@ export default function CategoryPage() {
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Filters Sidebar */}
             <div className="lg:w-64 flex-shrink-0">
-              <div className="bg-white rounded-lg shadow-md p-6 sticky top-24">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Filters</h3>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 sticky top-24">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Filters</h3>
                 
                 {/* Subcategories */}
                 <div className="mb-6">
