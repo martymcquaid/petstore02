@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-teal-50 to-cyan-50 py-20">
+      <section className="relative bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
