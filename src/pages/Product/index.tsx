@@ -371,7 +371,11 @@ export default function ProductPage() {
               <div className="space-y-6">
                 <div className="border-b pb-6">
                   <div className="flex items-center gap-4 mb-3">
-                    <div className="w-12 h-12 bg-gray-300 rounded-full"></div>
+                    <img 
+                      src="https://images.unsplash.com/photo-1494790108755-2616b332c1ca?w=100&h=100&fit=crop&crop=face&face=center"
+                      alt="Sarah Johnson" 
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
                     <div>
                       <p className="font-semibold text-gray-900">Sarah Johnson</p>
                       <div className="flex items-center gap-2">
