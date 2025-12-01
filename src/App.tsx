@@ -23,6 +23,7 @@ function App() {
         <Route path="/order-confirmation" element={<OrderConfirmationPage />} />
       </Routes>
     </CartProvider>
+    </ThemeProvider>
   )
 }
 
