@@ -29,7 +29,13 @@ export default function ProductPage() {
   }
 
   const handleAddToWishlist = () => {
-    console.log('Added to wishlist:', product?.name)
+    if (product) {
+      if (isInWishlist(product.id)) {
+        removeFromWishlist(product.id)
+      } else {
+        addToWishlist(product)
+      }
+    }
   }
 
   const renderStars = (rating: number) => {
