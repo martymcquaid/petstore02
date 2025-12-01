@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
+import { useCart } from '../context/CartContext'
 
-interface HeaderProps {
-  cartItemCount?: number
-}
-
-export default function Header({ cartItemCount = 0 }: HeaderProps) {
+export default function Header() {
+  const { state } = useCart()
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
