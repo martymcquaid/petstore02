@@ -320,6 +320,142 @@ export const mockProducts: Product[] = [
     materials: ['Various medical supplies'],
     tags: ['first aid', 'emergency', 'health', 'safety'],
     isNew: true
+  },
+  {
+    id: '13',
+    name: 'Cat Litter Box with Hood',
+    description: 'Enclosed cat litter box with carbon filter for odor control. Easy to clean with removable lid.',
+    price: 45.99,
+    originalPrice: 59.99,
+    images: [
+      'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&h=400&fit=crop&crop=center'
+    ],
+    category: 'cats',
+    subcategory: 'Litter & Accessories',
+    brand: 'CleanPaws',
+    rating: 4.3,
+    reviewCount: 156,
+    inStock: true,
+    stockCount: 28,
+    features: ['Odor control', 'Enclosed design', 'Carbon filter', 'Easy to clean'],
+    materials: ['Plastic', 'Carbon filter'],
+    sizes: ['Standard', 'Large'],
+    colors: ['Gray', 'Blue'],
+    tags: ['litter box', 'hooded', 'odor control', 'enclosed'],
+    isOnSale: true,
+    discountPercentage: 23
+  },
+  {
+    id: '14',
+    name: 'Dog Leash and Collar Set',
+    description: 'Matching leash and collar set with reflective stitching for night safety. Comfortable padded handle.',
+    price: 24.99,
+    images: [
+      'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1583337130417-3346a1bbe748?w=400&h=400&fit=crop&crop=center'
+    ],
+    category: 'dogs',
+    subcategory: 'Collars & Leads',
+    brand: 'SafeWalk',
+    rating: 4.6,
+    reviewCount: 203,
+    inStock: true,
+    stockCount: 67,
+    features: ['Reflective stitching', 'Padded handle', 'Adjustable collar', 'Quick release buckle'],
+    materials: ['Nylon', 'Metal hardware', 'Reflective material'],
+    sizes: ['Small', 'Medium', 'Large'],
+    colors: ['Black', 'Red', 'Blue', 'Pink'],
+    tags: ['leash', 'collar', 'reflective', 'safety'],
+    isNew: true
+  },
+  {
+    id: '15',
+    name: 'Fish Food Pellets',
+    description: 'Nutritionally balanced fish food pellets for tropical fish. Enhances color and promotes healthy growth.',
+    price: 12.99,
+    images: [
+      'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=400&fit=crop&crop=center'
+    ],
+    category: 'fish',
+    subcategory: 'Food & Treats',
+    brand: 'AquaFeed',
+    rating: 4.4,
+    reviewCount: 89,
+    inStock: true,
+    stockCount: 45,
+    features: ['Balanced nutrition', 'Color enhancing', 'Slow sinking', 'No water clouding'],
+    materials: ['Fish meal', 'Spirulina', 'Vitamins'],
+    sizes: ['100g', '250g', '500g'],
+    tags: ['fish food', 'pellets', 'tropical', 'nutrition'],
+    isOnSale: true,
+    discountPercentage: 15
+  },
+  {
+    id: '16',
+    name: 'Reptile Habitat Decor',
+    description: 'Natural-looking reptile habitat decoration with hiding spots and climbing surfaces. Safe for all reptiles.',
+    price: 32.99,
+    images: [
+      'https://images.unsplash.com/photo-1584214177574-0e3e4e4a1b3c?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1577567912240-7d8509a89722?w=400&h=400&fit=crop&crop=center'
+    ],
+    category: 'reptiles',
+    subcategory: 'Decorations',
+    brand: 'ReptiScape',
+    rating: 4.5,
+    reviewCount: 67,
+    inStock: true,
+    stockCount: 19,
+    features: ['Natural look', 'Multiple hiding spots', 'Climbing surface', 'Resin construction'],
+    materials: ['Resin', 'Non-toxic paint'],
+    sizes: ['Small', 'Medium', 'Large'],
+    tags: ['habitat', 'decor', 'hiding', 'climbing'],
+    isNew: true
+  },
+  {
+    id: '17',
+    name: 'Small Animal Exercise Wheel',
+    description: 'Silent spinning exercise wheel for hamsters, gerbils, and small rodents. Safe solid surface design.',
+    price: 18.99,
+    images: [
+      'https://images.unsplash.com/photo-1422568374078-57d432c8de21?w=400&h=400&fit=crop&crop=center'
+    ],
+    category: 'small-animals',
+    subcategory: 'Toys',
+    brand: 'ActivePet',
+    rating: 4.7,
+    reviewCount: 124,
+    inStock: true,
+    stockCount: 38,
+    features: ['Silent spinning', 'Solid surface', 'Safe design', 'Easy to clean'],
+    materials: ['Plastic', 'Metal axle'],
+    sizes: ['6 inch', '8 inch', '12 inch'],
+    colors: ['Blue', 'Green', 'Pink'],
+    tags: ['exercise wheel', 'silent', 'hamster', 'rodent'],
+    isOnSale: true,
+    discountPercentage: 20
+  },
+  {
+    id: '18',
+    name: 'Bird Food Mix',
+    description: 'Premium bird food mix with seeds, nuts, and fruits for balanced nutrition. Attracts wild birds.',
+    price: 16.99,
+    images: [
+      'https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=400&h=400&fit=crop&crop=center'
+    ],
+    category: 'birds',
+    subcategory: 'Food & Treats',
+    brand: 'WildBird',
+    rating: 4.6,
+    reviewCount: 198,
+    inStock: true,
+    stockCount: 56,
+    features: ['Premium seeds', 'Added fruits', 'Nutritionally balanced', 'Attracts multiple species'],
+    materials: ['Various seeds', 'Dried fruits', 'Nuts'],
+    sizes: ['2lb', '5lb', '10lb'],
+    tags: ['bird food', 'seeds', 'wild birds', 'premium'],
+    isNew: true
   }
 ]
 
