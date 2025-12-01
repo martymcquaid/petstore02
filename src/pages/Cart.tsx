@@ -167,9 +167,11 @@ export default function CartPage() {
               </div>
 
               {/* Checkout Button */}
-              <Button size="lg" className="w-full mb-4">
-                Proceed to Checkout
-              </Button>
+              <Link to="/checkout">
+                <Button size="lg" className="w-full mb-4">
+                  Proceed to Checkout
+                </Button>
+              </Link>
 
               {/* Security Badges */}
               <div className="text-center text-sm text-gray-600">
