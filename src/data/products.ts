@@ -261,7 +261,7 @@ export const mockProducts: Product[] = [
     description: 'Professional dog training clicker with wrist strap. Perfect for positive reinforcement training.',
     price: 6.99,
     images: [
-      '/images/products/dog-clicker-1.jpg'
+      'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'dogs',
     subcategory: 'Training',
