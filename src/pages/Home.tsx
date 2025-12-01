@@ -259,7 +259,11 @@ export default function Home() {
               </div>
               <p className="text-gray-700 mb-4">"Excellent customer service and competitive prices. Will definitely shop here again!"</p>
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face&face=center"
+                  alt="Emily L." 
+                  className="w-10 h-10 rounded-full object-cover mr-3"
+                />
                 <div>
                   <p className="font-semibold text-gray-900">Emily L.</p>
                   <p className="text-sm text-gray-500">Multiple Pet Owner</p>
