@@ -1,9 +1,13 @@
 import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Button from '../components/Button'
+import { useCart } from '../context/CartContext'
 
 export default function CheckoutPage() {
+  const navigate = useNavigate()
+  const { state, clearCart } = useCart()
   const [formData, setFormData] = useState({
     // Contact Information
     email: '',
