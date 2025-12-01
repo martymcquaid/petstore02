@@ -4,7 +4,6 @@ import { useCart } from '../context/CartContext'
 
 interface ProductCardProps {
   product: Product
-  onAddToCart?: (product: Product) => void
   onQuickView?: (product: Product) => void
 }
 
