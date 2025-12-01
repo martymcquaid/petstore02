@@ -83,7 +83,7 @@ export default function ProductPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header cartItemCount={0} />
+      <Header />
 
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
