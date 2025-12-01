@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Button from '../components/Button'
 import ProductCard from '../components/ProductCard'
 import { useWishlist } from '../context/WishlistContext'
+import { scrollToTop } from '../utils/scrollToTop'
 
 export default function WishlistPage() {
   const { state, removeFromWishlist, clearWishlist } = useWishlist()
