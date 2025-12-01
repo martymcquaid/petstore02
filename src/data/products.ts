@@ -240,8 +240,8 @@ export const mockProducts: Product[] = [
     description: 'Spacious guinea pig habitat with removable bottom, hay feeder, and water bottle. Easy to clean and maintain.',
     price: 69.99,
     images: [
-      '/images/products/guinea-pig-habitat-1.jpg',
-      '/images/products/guinea-pig-habitat-2.jpg'
+      'https://images.unsplash.com/photo-1583337130417-3346a1bbe748?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1422568374078-57d432c8de21?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'small-animals',
     subcategory: 'Cages & Habitats',
