@@ -130,8 +130,8 @@ export const mockProducts: Product[] = [
     description: 'Programmable automatic pet feeder with portion control and voice recording. Perfect for scheduled feeding times.',
     price: 59.99,
     images: [
-      '/images/products/auto-feeder-1.jpg',
-      '/images/products/auto-feeder-2.jpg'
+      'https://images.unsplash.com/photo-1606857521015-7f9faeaf8d4e?w=400&h=400&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1589924633312-65c209c639d1?w=400&h=400&fit=crop&crop=center'
     ],
     category: 'dogs',
     subcategory: 'Food & Treats',
