@@ -13,6 +13,7 @@ export default function ProductPage() {
   const [selectedSize, setSelectedSize] = useState('')
   const [selectedColor, setSelectedColor] = useState('')
   const [quantity, setQuantity] = useState(1)
+  const { addToCart } = useCart()
   
   const product = mockProducts.find(p => p.id === productId)
   const relatedProducts = mockProducts
@@ -20,12 +21,9 @@ export default function ProductPage() {
     .slice(0, 4)
 
   const handleAddToCart = () => {
-    console.log('Added to cart:', {
-      product: product?.name,
-      quantity,
-      size: selectedSize,
-      color: selectedColor
-    })
+    if (product) {
+      addToCart(product, quantity, selectedSize || undefined, selectedColor || undefined)
+    }
   }
 
   const handleAddToWishlist = () => {
