@@ -6,6 +6,7 @@ import ProductPage from './pages/Product'
 import CartPage from './pages/Cart'
 import CheckoutPage from './pages/Checkout'
 import OrderConfirmationPage from './pages/OrderConfirmation'
+import SearchPage from './pages/Search'
 
 function App() {
   return (
