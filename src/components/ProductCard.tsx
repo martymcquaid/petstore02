@@ -88,9 +88,11 @@ export default function ProductCard({ product, onAddToCart, onQuickView }: Produ
       <div className="p-4">
         <div className="mb-2">
           <p className="text-sm text-gray-500 mb-1">{product.brand}</p>
-          <h3 className="text-lg font-semibold text-gray-900 line-clamp-2 hover:text-teal-600 transition-colors cursor-pointer">
-            {product.name}
-          </h3>
+          <Link to={`/product/${product.id}`}>
+            <h3 className="text-lg font-semibold text-gray-900 line-clamp-2 hover:text-teal-600 transition-colors cursor-pointer">
+              {product.name}
+            </h3>
+          </Link>
         </div>
 
         {/* Rating */}
