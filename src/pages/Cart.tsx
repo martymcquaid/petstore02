@@ -56,6 +56,10 @@ export default function CartPage() {
                       src={item.product.images[0]}
                       alt={item.product.name}
                       className="w-24 h-24 object-cover rounded-lg"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=center';
+                      }}
                     />
 
                     {/* Product Details */}
