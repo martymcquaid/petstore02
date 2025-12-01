@@ -37,7 +37,7 @@ export default function CategoryPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header cartItemCount={0} />
+      <Header />
 
       {/* Category Hero */}
       <section className="bg-gradient-to-r from-teal-50 to-cyan-50 py-16">
